@@ -1,5 +1,7 @@
 # FinalProject - 06_Team Helios
 
+## Paper
+[S. Maymon and A. V. Oppenheim, "Quantization and compensation in sampled interleaved multi-channel systems," 2010 IEEE International Conference on Acoustics, Speech and Signal Processing, 2010, pp. 3622-3625, doi: 10.1109/ICASSP.2010.5495910.](https://ieeexplore.ieee.org/document/5495910)
 ## Abstract
 We consider a interleaved, multichannel sampling structure and perform the
 usual Nyquist- Shannon sampling 1 for a given signal. We show that overall
