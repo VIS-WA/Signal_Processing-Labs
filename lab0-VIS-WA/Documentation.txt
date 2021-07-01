@@ -1,0 +1,14 @@
+File-name Format:
+Codes for the questions are saved as Q1 , Q2 ... correspondingly to the question number.Any sub questions for a given question is saved as Q1_a , Q1_b ... . The respective plots and results are saved with the same name.Files can excecuted directly by entering the file names without extension in MATLAB command window.
+
+
+INPUT/OUTPUT:
+Q1)Execute the codes diectly to get the plots,No inputs required
+
+Q2) This code is a function file.So Q2(x) is the execution command where x is a 3D matrix to be given by the user.
+
+
+Explanation:
+Q1) Defined a vector x (domain) with increments 1 and 0.001 in 2 different programs.Calculated values of y by verifying the condition if x>2.
+
+Q2)After taking the input of 3D matrix, i changed its columns to rows, rows to height , height to columns such that the m 2D n X p matrices are seperated by heights and their mean is calculated to get the final average matrix

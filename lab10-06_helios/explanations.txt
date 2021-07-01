@@ -1,0 +1,12 @@
+Q1)
+b) The phase of these filters is not linear as they are IIR filters.
+-c) Each filter has it's own advantages.So the use of filters depends on the necessity. 
+    Magnitude response of butterworth filter decreases monotonically as frquency increases but chebyshev and elliptic show ripples.
+    Chebyshev and elliptic have sharper cutoff frequencies whereas the transition band for butterworth filter is larger.
+    The time domain output of butterworth filter is more stable compared to chebyshev and elliptic because chebyshev and elliptic have ripples.
+ f) The filters work as expected.  
+Q2) 
+b) Yes, the filter is stable and this can be verified from the pole-zero plot where all poles lie within the unit circle.
+c) - On comparing magnitude plots of a and b we can see that magnitude on left and right portions wrt frequency = pi/4 are of different lengths in filter a whereas in case of filter b , the magnitudes are almost same on both left and right of pi/4.
+- On comparing the phase plots , we can observe the phase decreases from  90 degrees to -90 in a linear way for filter a whereas in filter b , the phase appears to fall in an exponential manner.
+- For the second filter, on varying the value of r we see that the magnitude on left of pi/4 becomes similar to that of magnitude on right. Initially one is high and other low and finally they become almost equal (looks like a straight lint with a drop at pi/4).

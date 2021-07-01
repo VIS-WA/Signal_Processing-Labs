@@ -1,0 +1,3 @@
+Q2) b - Yes the phase is linear and this is clear from theory and result as well. In theory , phase would be WNo which is a linear equation.
+d - We can observe the side lobes are higher for Blackman window when comapred to rectangular windows.Also transistion time follows the same trend ie width of transistion region is larger for blackman region.
+f - The magnitude plot we obtained is similar to the plots obtained in a w but only difference observed is there's a circular shift in the plots.It appears similar to a practical high pass filter.

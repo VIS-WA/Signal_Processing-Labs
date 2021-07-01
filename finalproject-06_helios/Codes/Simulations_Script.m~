@@ -1,0 +1,28 @@
+%-----------Required parameters
+Tm=[0,2/3,-2/3];Tm1=[0,1/8,-3/4];
+s=[3,4,5;4,3,5;3,5,4;5,3,4;4,5,3;5,4,3];q=[4,4,4];
+x=-1:0.001:1;
+y=x;
+w=zeros(1,length(x)*length(y));%plots for gamma=z i.e average noise power
+
+%------------fixing step size and finding optimal time delays
+z= @(x,y) (256+256+256)/(36*mini([4,4,4],[0,x,y]));ezsurfc(z) ;xlim([-1 1]);ylim([-1,1]);
+k=1;%counter
+for a=x
+    for b=y
+        w(k)=(256+256+256)/(36*mini([4,4,4],[0,a,b]));
+        k=k+1;
+    end
+end
+%------------ratio of average power for different time delays
+a=100 * (mini([4,4,4],Tm1) - mini([4,4,4],Tm))/ mini([4,4,4],Tm)
+%------------finding optimal step size for given delays 
+for i=[1:6]
+z = round(mini(q,Tm1)/ mini(s(i,:),Tm1), 2) %rounding off to 2 decimals
+end
+%------------different step sizes and optimising time delays
+figure()
+ z= @(x,y) mini([3,4,4],Tm)/(mini([3,4,4],[0,x,y]));ezsurfc(z) ;xlim([-1 1]);ylim([-1,1]);
+%mini(q,Tm1)
+%plot3(x,y,z);
+

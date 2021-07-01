@@ -1,0 +1,16 @@
+Question 1:
+
+b) Ye, DTFT is periodic with maximum period of 2pi. For special functions, period can be less than 2pi.
+c) For the given function, when 0<a<1, we get an exponentially decreasing graph and it's DTFT acts as a low-pass filter. When -1<a<0 , the graph oscillates between + and - x-axes which indicates the presence of higher frequency components and as expected we can observe the same in the plot of its DTFT and therefore it acts as a High-pass filter.
+We can observe that as value of b increases from 0.1 to 0.9 the peak height (amplitude) increases and also the peak widths get compressed (near 0,+-w,+-2w...).
+
+Question 3:
+
+a) We get the impulse response by replace x[n] with delta[n] and frequency response by passing the same reponse through DTFT .
+	=> H(e^jw)=1+e^(-2jw).
+b) (1) 	=> H(e^jw) = 0.33(e^jw + 1 + e^-jw)
+   (2)	=> H(e^jw) = 0.25(2 - e^-jw - e^jw)
+c) First LTI system acts as a non-ideal bandpass filter as it has maximum amplitude at frequecies between 0 and pi (symmetric with (-pi,0)).
+Second LTI system is similar to a non-ideal low-pass filter as the graph has higher amplitudes at freuqncies close to 0 and lower amplitudes at higher frequencies.
+Third LTI system is similar to non-ideal high-pass filter as it has higher amplitudes at higher frequencies and lower amplitudes at lower frequencies (near 0).
+d) Observations for this is same as Q1c) and if a is positive it acts as high-pass filter and if a is negative it behaves as low-pass filter.

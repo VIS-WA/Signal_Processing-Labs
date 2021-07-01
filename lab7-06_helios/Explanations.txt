@@ -1,0 +1,9 @@
+Question 2:
+
+Question 3:
+a) Poles are located at (r*cos(theta)+r*sin(theta),r*cos(theta)-r*sin(theta))
+   Zeros are located at (cos(theta)+sin(theta),cos(theta)-sin(theta))
+b) Yes the system can be both stable and Causal at same time .Then the roc is |z|>r. Here r belongs to (0,1). So we can always have the ROC 1<|z|<inf for any value of theta and r.
+c) For a fixed r (here r=0.95) when we keep modifying theta, the magnitude of the impulse response is constant everywhere (around ~1.05) but as theta tends to the value chosen , the magnitude becomes 0.
+So if we plot the graphs for theta from 0 to pi , the value where the magnitude is 0 also moves along with theta chosen from 0 to pi
+d) For a fixed theta (here theta = pi/3) when we keep modifying r, the magnitude of the graph tends to 1 (decreases from around as we increase r) while the function becomes 0 when phase = pi/3 .

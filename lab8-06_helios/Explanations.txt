@@ -1,0 +1,7 @@
+Question 2:
+- Firstly we use the fact that x[n]*h[n]=X(k).H(k) and complexity for N point fft and ifft is O(Nlog(N)), for multiplication & addition ~O(1).
+- We could easily show that complexity of FFT and IFFT would be similar as calculation computation is same for both except that their expressions only have a negative sign in the exponenetial terms.
+- for a circular convoulution involving FFT , complexity would be O(ifft)+2*O(fft)+N*O(1) . For large N this would be similar to O(Nlog(N)).
+- for circular convolution in time domain , we would have to do approximately N real-multipliactions and N-1 real-additions for a particular y[n].Now for all n = [0,N-1], complexity would be N*(O(N)+O(N-1)) ~= O(N^2).
+- Complexity for circular and linear Convolutions using DFT would be O(nlogn) as iin linear convolution ,we justn do an extra zero padding which has constant complexity.
+- Similarly complexity for circular and linear Convolution in time domain would be O(n^2).

@@ -1,0 +1,57 @@
+b=[1];
+a=[1,0.8];
+subplot(2,2,1);
+zplane(b,a);
+title("pole-zero");
+[h,w]=freqz(b,a,"whole",1001);
+subplot(2,2,2);
+plot(w,abs(h));
+title("DTFT magnitude");
+[h,t]=impz(b,a);
+subplot(2,2,3);
+plot(t,h);
+title("impulse response");
+%----------p="-0.8"-----------------------
+a=[1,-0.8];
+figure();
+subplot(2,2,1);
+zplane(b,a);
+title("pole-zero plot");
+[h,w]=freqz(b,a,"whole",1001);
+subplot(2,2,2);
+plot(w,abs(h));
+title("DTFT magnitude");
+[h,t]=impz(b,a);
+subplot(2,2,3);
+plot(t,h);
+title("impulse response");
+%------------------p="0.1"------
+a=[1,0.1];
+figure();
+subplot(2,2,1);
+zplane(b,a);
+title("pole-zero");
+[h,w]=freqz(b,a,"whole",1001);
+subplot(2,2,2);
+plot(w,abs(h));
+title("DTFT magnitude");
+[h,t]=impz(b,a);
+subplot(2,2,3);
+plot(t,h);
+title("impulse-response");
+%--------------------- (z-p^-1)/z-p-------------------
+b=[1,-2];
+a=[1,-0.5];
+figure();
+subplot(2,2,1);
+zplane(b,a);
+title("pole-zero");
+[h,w]=freqz(b,a,"whole",1001);
+subplot(2,2,2);
+plot(w,abs(h));
+title("DTFT magnitude");
+[h,t]=impz(b,a);
+subplot(2,2,3);
+plot(t,h);
+title("impulse-response");
+
